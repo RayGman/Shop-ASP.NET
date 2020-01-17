@@ -1,0 +1,9 @@
+﻿<h1>@Model.lighCategor</h1>
+<div class="row mt-3 mb-2">
+        @{
+            foreach (Light light in Model.allLights)
+            {
+                @await Html.PartialAsync("AllLights", light)
+            }
+        }
+</div>
